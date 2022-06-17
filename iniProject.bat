@@ -32,6 +32,7 @@ if exist "C:\Users\rlyra\Documents\Dev\VS_Github\Leia_TI" (
 	dotnet add package Microsoft.EntityFrameworkCore.Tools 
 	
 	code .
+	
 	cd ..	
 	
 	touch logTarefa.txt 
