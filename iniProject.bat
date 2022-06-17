@@ -1,17 +1,17 @@
-cd C:\Users\rlyra\Documents\Dev
+cd C:\Users\rlyra\Documents\Dev\VS_Github\
 
 # start C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
 
-if exist "C:\Users\rlyra\Documents\Dev\livraria_aspnet\" (
+if exist "C:\Users\rlyra\Documents\Dev\VS_Github\Leia_TI" (
 	rem "O diretório existe! Abrindo o VSCode."
-	cd C:\Users\rlyra\Documents\Dev\livraria_aspnet\
+	cd C:\Users\rlyra\Documents\Dev\VS_Github\Leia_TI\
 	code .
 	
 ) else (
 	rem "O diretório não existe. Clonando projeto."
-	cd C:\Users\rlyra\Documents\Dev\
-	git clone https://github.com/rvlyra/livraria_aspnet.git
-	cd livraria_aspnet\
+	cd C:\Users\rlyra\Documents\Dev\VS_Github\
+	git clone https://github.com/rvlyra/Leia_TI.git
+	cd Leia_TI\
 	echo "---------------------"
 	echo "Criando projeto MVC dotnet"
 	echo " "
@@ -20,9 +20,9 @@ if exist "C:\Users\rlyra\Documents\Dev\livraria_aspnet\" (
 	echo "---------------------"
 	echo " "
 	
-	dotnet new mvc -o livraria -au none
+	dotnet new mvc -o Leia_TI -au none
 
-	cd livraria/
+	cd Leia_TI/
 
 	echo "Incluindo pacotes EF Core"
 	dotnet add package Microsoft.EntityFrameworkCore.SqlServer
@@ -32,7 +32,7 @@ if exist "C:\Users\rlyra\Documents\Dev\livraria_aspnet\" (
 	dotnet add package Microsoft.EntityFrameworkCore.Tools 
 	
 	code .
-	cd .. 
+	cd ..	
 	
 	touch logTarefa.txt 
 	echo "Tarefa realizada em %date%, %time%" >> logTarefa.txt
@@ -40,6 +40,3 @@ if exist "C:\Users\rlyra\Documents\Dev\livraria_aspnet\" (
 	start logTarefa.txt 
 	close
 )
-
-
-# start https://www.youtube.com/watch?v=VbEhMVcWOFs
