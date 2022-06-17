@@ -6,6 +6,14 @@ if exist "C:\Users\rlyra\Documents\Dev\VS_Github\Leia_TI" (
 	rem "O diretório existe! Abrindo o VSCode."
 	cd C:\Users\rlyra\Documents\Dev\VS_Github\Leia_TI\
 	code .
+		
+	touch logTarefa.txt 
+	echo "Tarefa realizada em %date%, %time%" >> logTarefa.txt	
+	
+	code .
+	
+	start logTarefa.txt 
+	close
 	
 ) else (
 	rem "O diretório não existe. Clonando projeto."
