@@ -5,8 +5,7 @@ cd C:\Users\rlyra\Documents\Dev\VS_Github\Leia_TI
 if exist "C:\Users\rlyra\Documents\Dev\VS_Github\Leia_TI\App"(
 	rem "O diretório existe! Abrindo o VSCode."
 	cd C:\Users\rlyra\Documents\Dev\VS_Github\Leia_TI\App\
-	code .
-		
+	
 	touch logTarefa.txt 
 	echo "Tarefa realizada em %date%, %time%" >> logTarefa.txt	
 	
