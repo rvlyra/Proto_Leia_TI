@@ -1,10 +1,10 @@
-cd C:\Users\rlyra\Documents\Dev\VS_Github\
+cd C:\Users\rlyra\Documents\Dev\VS_Github\Leia_TI
 
 # start C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
 
-if exist "C:\Users\rlyra\Documents\Dev\VS_Github\Leia_TI" (
+if exist "C:\Users\rlyra\Documents\Dev\VS_Github\Leia_TI\App"(
 	rem "O diretório existe! Abrindo o VSCode."
-	cd C:\Users\rlyra\Documents\Dev\VS_Github\Leia_TI\
+	cd C:\Users\rlyra\Documents\Dev\VS_Github\Leia_TI\App\
 	code .
 		
 	touch logTarefa.txt 
@@ -28,9 +28,9 @@ if exist "C:\Users\rlyra\Documents\Dev\VS_Github\Leia_TI" (
 	echo "---------------------"
 	echo " "
 	
-	dotnet new mvc -o Leia_TI -au none
+	dotnet new mvc -o App -au none
 
-	cd Leia_TI/
+	cd C:\Users\rlyra\Documents\Dev\VS_Github\Leia_TI\App
 
 	echo "Incluindo pacotes EF Core"
 	dotnet add package Microsoft.EntityFrameworkCore.SqlServer
