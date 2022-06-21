@@ -4,9 +4,9 @@ cd C:\rlyra\Documents\Dev\Leia_TI\Win\
 	
 dotnet --version
 
-dotnet new mvc -o App -au none
+dotnet new mvc -o livraria -au none
 
-cd App\
+cd livraria\
 
 echo "Incluindo pacotes EF Core"
 dotnet add package Microsoft.EntityFrameworkCore.SqlServer

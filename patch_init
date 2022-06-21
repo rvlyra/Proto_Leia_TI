@@ -1,0 +1,8 @@
+docker pull mcr.microsoft.com/dotnet/sdk:6.0
+docker pull mcr.microsoft.com/dotnet/runtime:6.0
+docker pull mcr.microsoft.com/dotnet/aspnet:6.0
+docker pull mcr.microsoft.com/mssql/server:2019-latest
+
+docker run -e "ACCEPT_EULA=Y" -e "SA_PASSWORD=Senha#1234" -p 1433:1433 --name sql_server -d mcr.microsoft.com/mssql/server:2019-latest
+
+docker run -d -p 80:80 docker/getting-started
