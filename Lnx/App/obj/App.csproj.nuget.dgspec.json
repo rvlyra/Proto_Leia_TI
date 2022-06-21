@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/rvlyra/DEV/GitProjects/ghub/Leia_TI/Lnx/App/App.csproj": {}
+  },
+  "projects": {
+    "/home/rvlyra/DEV/GitProjects/ghub/Leia_TI/Lnx/App/App.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/rvlyra/DEV/GitProjects/ghub/Leia_TI/Lnx/App/App.csproj",
+        "projectName": "App",
+        "projectPath": "/home/rvlyra/DEV/GitProjects/ghub/Leia_TI/Lnx/App/App.csproj",
+        "packagesPath": "/home/rvlyra/.nuget/packages/",
+        "outputPath": "/home/rvlyra/DEV/GitProjects/ghub/Leia_TI/Lnx/App/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/rvlyra/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.301/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
