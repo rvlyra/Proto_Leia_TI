@@ -7,15 +7,6 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-/*
-    Conexão Alternativa
-*/
-// Variáveis de ambiente do container
-var server = builder.Configuration["DbServer"] ?? "GZTVIX-BDHM01";
-// var port = builder.Configuration["DbPort"] ?? "1433"; -- usar em caso de conexão via docker
-var user = builder.Configuration["DbUser"] ?? "estudosdb";
-var password = builder.Configuration["DbPassword"] ?? "estudosdb@!123$";
-var database = builder.Configuration["Database"] ?? "estudosdb";
 
 var connectionString = $"Server={server};Initial Catalog={database};Password={password};User ID={user};Persist Security Info=True;";
 
